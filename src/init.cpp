@@ -798,4 +798,3 @@ bool AppInit2()
 
     return true;
 }
-
