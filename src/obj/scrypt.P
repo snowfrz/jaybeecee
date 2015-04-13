@@ -1,0 +1,8 @@
+obj/scrypt.o: scrypt.c \
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/scrypt.h \
+  /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h \
+  /opt/local/include/openssl/opensslconf.h
+scrypt.c :
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/scrypt.h :
+  /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h :
+  /opt/local/include/openssl/opensslconf.h :
