@@ -532,7 +532,7 @@ bool AppInit2()
     fDiscover = GetBoolArg("-discover", true);
     fNameLookup = GetBoolArg("-dns", true);
 #ifdef USE_UPNP
-    fUseUPnP = GetBoolArg("-upnp", USE_UPNP);
+    fUseUPnP = GetBoolArg("-upnp", /*USE_UPNP*/);
 #endif
 
     bool fBound = false;
