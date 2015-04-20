@@ -111,8 +111,8 @@ OBJS= \
     obj/rpcdump.o \
     obj/rpcnet.o \
     obj/rpcrawtransaction.o \
+    obj/scrypt.o \
     obj/script.o \
-    \obj/scrypt.o
     obj/sync.o \
     obj/util.o \
     obj/wallet.o \
