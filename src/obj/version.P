@@ -1,4 +1,6 @@
-obj/version.o: version.cpp version.h \
- /home/justin/jaybeecee/src/obj/build.h
-version.cpp version.h :
- /home/justin/jaybeecee/src/obj/build.h :
+obj/version.o: version.cpp \
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/version.h \
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/obj/build.h
+version.cpp :
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/version.h :
+  /Users/Justin/Desktop/Development/Cryptocurrency/Jaybeecee/jaybeecee/src/obj/build.h :
