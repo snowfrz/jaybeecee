@@ -93,7 +93,7 @@ xCXXFLAGS=-O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-para
 # adds some defaults in front. Unfortunately, LDFLAGS=... $(LDFLAGS) does not work.
 xLDFLAGS=$(LDHARDENING) $(LDFLAGS)
 
-OBJ= \
+OBJS= \
     obj/version.o \
     obj/checkpoints.o \
     obj/netbase.o \
@@ -122,12 +122,14 @@ OBJ= \
 
 all: jaybeecee
 
+obj/scrypt.o: scrypt.h
+	gcc -c -o $@ $^
+
 # auto-generated dependencies:
 -include obj/*.P
 -include obj-test/*.P
 
-obj/scrypt.o: scrypt.h
-	gcc -c -o $@ $^
+
 
 obj/build.h: FORCE
 	/bin/sh ../share/genbuild.sh obj/build.h
