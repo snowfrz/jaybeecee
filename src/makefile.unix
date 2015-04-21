@@ -93,7 +93,7 @@ xCXXFLAGS=-O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-para
 # adds some defaults in front. Unfortunately, LDFLAGS=... $(LDFLAGS) does not work.
 xLDFLAGS=$(LDHARDENING) $(LDFLAGS)
 
-OBJS= \
+OBJ= \
     obj/version.o \
     obj/checkpoints.o \
     obj/netbase.o \
