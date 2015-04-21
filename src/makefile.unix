@@ -112,7 +112,7 @@ OBJS= \
     obj/rpcnet.o \
     obj/rpcrawtransaction.o \
     obj/script.o \
-    home/$/jaybeecee/src/obj/scrypt.o \
+    home/justin/jaybeecee/src/obj/scrypt.o \
     obj/sync.o \
     obj/util.o \
     obj/wallet.o \
