@@ -112,7 +112,7 @@ OBJS= \
     obj/rpcnet.o \
     obj/rpcrawtransaction.o \
     obj/script.o \
-    /home/justin/jaybeecee/src/obj/scrypt.o \
+    obj/scrypt.o \
     obj/sync.o \
     obj/util.o \
     obj/wallet.o \
@@ -126,7 +126,7 @@ all: jaybeecee
 -include obj/*.P
 -include obj-test/*.P
 
-obj/scrypt.o: scrypt.h
+obj/scrypt.h: scrypt.h
 	gcc -c -o $@ $^
 
 obj/build.h: FORCE
